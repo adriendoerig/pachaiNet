@@ -1,0 +1,14 @@
+net: "nets/my_train_val.prototxt"
+test_iter: 25                    # number of test iteration per test_interval
+test_interval: 25                # how often the test phase occurs
+base_lr: 0.01                   # learning rate at the beginning
+lr_policy: "step"               # learning rate policy: drop the learning rate by a factor or gamma every stepsize iterations
+gamma: 0.1                      # see lr_policy
+stepsize: 100000                # see lr_policy
+display: 25                     # how often to output results to the screen
+max_iter: 500                    # max iterations
+momentum: 0.9                   # how much of the previous weights will be retained from the last iteration
+weight_decay: 0.0005            # the factor of (regularization) penalization of large weights
+snapshot: 10000                 # how often to output a model and solverstate
+snapshot_prefix: "my_train_val" # how the snapshots should be prefixed
+solver_mode: CPU

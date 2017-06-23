@@ -1,0 +1,3 @@
+To use a network online, you need to modify a few lines in the netDescription.prototxt, to get rid of what is not needed anymore: labels, accuracy, etc. See here:
+
+https://github.com/BVLC/caffe/wiki/Using-a-Trained-Network:-Deploy

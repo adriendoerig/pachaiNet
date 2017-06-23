@@ -1,0 +1,4 @@
+$ python /path/to/caffe/python/draw_net.py path/to/YOURNET.prototxt path/to/IMAGENAME.png
+from pachaiConfigs:
+
+python ../caffe/python/draw_net.py nets/my_net.prototxt nets/my_net.png

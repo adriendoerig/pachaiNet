@@ -1,0 +1,1 @@
+../caffe/build/tools/caffe train --solver nets/transferLearning/solver_pachai.prototxt --weights nets/transferLearning/bvlc_reference_caffenet.caffemodel

@@ -1,0 +1,14 @@
+YOU NEED:
+- the LMDBs for your training/testing sets as well as the mean over all images mean.prototxt(just run prepareData.py, specifying your data)
+- a netDescription.prototxt (you must specify the path to the train&test LMDBs and the train&test mean.prototxt files here in the first layer)
+- a solver.prototxt (you must specify the path to the netDescription.prototxt here)
+
+Then run the following line in the terminal (from pachaiConfigs).
+
+$ /full/path/to/caffe/build/tools/caffe train --solver /full/path/to/my_solver.prototxt
+
+in this particular case:
+
+../caffe/build/tools/caffe train --solver nets/my_solver.prototxt
+
+alternatively, run trainNet.py (after having created the LMDBs, netDescription and solver.
